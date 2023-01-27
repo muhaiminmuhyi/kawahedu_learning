@@ -2,6 +2,14 @@ import java.util.*;
 
 public class InputUser {
     public static void main(String[] args) {
+
+        /*
+        Sorting dan searching adalah hal yang sangat penting di dalam java karna bisa
+        menyusun angka maupun huruf dan bisa kita search index nya.
+        */
+
+        // Insert into array static
+
         Scanner scan = new Scanner(System.in);
         System.out.print("Masukan jumlah array : ");
         int inputLength = Integer.parseInt(scan.nextLine());
@@ -20,6 +28,8 @@ public class InputUser {
         System.out.println(Arrays.toString(arrayX));
         System.out.println(mean);
 
+        // Sorting Array
+
         Arrays.sort(arrayX);
 
         System.out.println("Sorted Array:");
@@ -27,6 +37,8 @@ public class InputUser {
             System.out.print(arrayX[i] + " ");
         }
         System.out.println();
+
+        // Searching
 
         System.out.println("Masukan Pencaharian :");
 
