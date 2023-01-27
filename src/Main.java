@@ -1,14 +1,18 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class Main {
     public Main() {
     }
 
     public static void main(String[] args) {
-        KawehEd();
-        aritmatikaDasar();
-        percabanganIfElse();
-        loopingWhile();
-        arrayLooping();
-        pointerLearn();
+//        KawehEd();
+//        aritmatikaDasar();
+//        percabanganIfElse();
+//        loopingWhile();
+//        arrayLooping();
+//        pointerLearn();
+        sortnSearch();
     }
 
     public static void KawehEd() {
@@ -81,5 +85,41 @@ public class Main {
             System.out.println("false");
         }
 
+    }
+
+    public static void sortnSearch()
+    {
+        // Unsorted Array
+        int array[] = { 10, 9, 8, 7, 6, 5, 4, 3, 2, 1 };
+
+        System.out.println("Unorted Array:");
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i] + " ");
+        }
+        System.out.println();
+
+        // Sorting the array
+        Arrays.sort(array);
+
+        // Printing sorted array
+        System.out.println("Sorted Array:");
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i] + " ");
+        }
+        System.out.println();
+
+        Scanner searchObj = new Scanner(System.in);
+        System.out.print("Masukan Pencaharian : ");
+
+        int key = searchObj.nextInt();
+
+        // Using binarySearch to search for desired element
+        int index = Arrays.binarySearch(array, key);
+
+        // Printing result
+        if (index >= 0)
+            System.out.println("Element "+ key +" found at index: " + index);
+        else
+            System.out.println("Element not found");
     }
 }
