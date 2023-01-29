@@ -61,30 +61,35 @@ public class WeekOne {
     public static void Addition(int firstNumber, int secondNumber)
     {
         int resultAddition = firstNumber + secondNumber;
+        System.out.println("The result is :" + resultAddition);
         WriteFiles(resultAddition,"Addition");
     }
 
     public static void Subtraction(int firstNumber, int secondNumber)
     {
         int resultSubtraction = firstNumber - secondNumber;
+        System.out.println("The result is : " + resultSubtraction);
         WriteFiles(resultSubtraction, "Subtraction");
     }
 
     public static void Multiplication(int firstNumber, int secondNumber)
     {
         int resultMultiplication = firstNumber * secondNumber;
+        System.out.println("The result is : " + resultMultiplication);
         WriteFiles(resultMultiplication, "Multiplication");
     }
 
     public static void Division(int firstNumber, int secondNumber)
     {
         int resultDivision = firstNumber / secondNumber;
+        System.out.println("The result is : " + resultDivision);
         WriteFiles(resultDivision, "Division");
     }
 
     public static void Modulus(int firstNumber, int secondNumber)
     {
         int resultModulus = firstNumber % secondNumber;
+        System.out.println("The result is : " + resultModulus);
         WriteFiles(resultModulus, "Modulus");
     }
 
@@ -98,50 +103,40 @@ public class WeekOne {
                     Writer.write("the result of the sum of the inputs you input is " + result);
                     Writer.close();
                     System.out.println("Successfully written.");
-                    readerFile(nameOperators);
                 } else if (Objects.equals(nameOperators, "Subtraction")) {
                     Writer.write("the result of the deduction that has been reduced is " + result);
                     Writer.close();
                     System.out.println("Successfully written.");
-                    readerFile(nameOperators);
                 } else if (Objects.equals(nameOperators,"Multiplication")) {
                     Writer.write("the result of multiplication that has been multiplied is " + result);
                     Writer.close();
                     System.out.println("Successfully written.");
-                    readerFile(nameOperators);
                 } else if (Objects.equals(nameOperators, "Division")) {
                     Writer.write("the result of the division that has been divided is " + result);
                     Writer.close();
                     System.out.println("Successfully written.");
-                    readerFile(nameOperators);
                 } else if (Objects.equals(nameOperators, "Modulus")) {
                     Writer.write("the result of the modulus is " + result);
                     Writer.close();
                     System.out.println("Successfully written.");
-                    readerFile(nameOperators);
                 }
             } else {
                 Path path = Paths.get(nameOperators+".txt");
                 if (Objects.equals(nameOperators, "Addition")) {
                     appendToFile(path, NEW_LINE + "the result of the sum of the inputs you input is " + result);
                     System.out.println("Successfully append.");
-                    readerFile(nameOperators);
                 } else if (Objects.equals(nameOperators, "Subtraction")) {
                     appendToFile(path, NEW_LINE + "the result of the deduction that has been reduced is " + result);
                     System.out.println("Successfully append.");
-                    readerFile(nameOperators);
                 } else if (Objects.equals(nameOperators,"Multiplication")) {
                     appendToFile(path, NEW_LINE + "the result of multiplication that has been multiplied is " + result);
                     System.out.println("Successfully append.");
-                    readerFile(nameOperators);
                 } else if (Objects.equals(nameOperators, "Division")) {
                     appendToFile(path, NEW_LINE + "the result of the division that has been divided is " + result);
                     System.out.println("Successfully append.");
-                    readerFile(nameOperators);
                 } else if (Objects.equals(nameOperators, "Modulus")) {
                     appendToFile(path, NEW_LINE + "the result of the modulus is " + result);
                     System.out.println("Successfully append.");
-                    readerFile(nameOperators);
                 }
             }
 
@@ -151,6 +146,12 @@ public class WeekOne {
             e.printStackTrace();
         }
     }
+
+    /**
+     * This is feature reader file if want use add this line
+     * readerFile(nameOperators) in if objects
+     * Thank You :)
+     **/
 
     public static void readerFile(String nameOperators)
     {
@@ -168,6 +169,10 @@ public class WeekOne {
             e.printStackTrace();
         }
     }
+
+    /**
+     * This is feature append when file already create.
+     **/
 
     private static void appendToFile(Path path, String content) throws IOException
     {
