@@ -2,8 +2,6 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
-    public Main() {
-    }
 
     public static void main(String[] args) {
 //        KawehEd();
@@ -12,7 +10,7 @@ public class Main {
 //        loopingWhile();
 //        arrayLooping();
 //        pointerLearn();
-        sortnSearch();
+//        sortnSearch();
     }
 
     public static void KawehEd() {
