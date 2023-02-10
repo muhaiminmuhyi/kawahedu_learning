@@ -35,8 +35,7 @@ public class dbFunction {
     public void insert_row(Connection conn, String table_name, String name_fruit, String color_fruit, int price_fruit){
         Statement statement;
         try{
-            String query = String.format("insert into %s(fruitid,name_fruit, color_fruit, price_fruit) values('%s','%s',%s);", table_name, name_fruit,color_fruit,price_fruit);
-            System.out.println(query);
+            String query = String.format("insert into %s(name_fruit, color_fruit, price_fruit) values('%s','%s',%s);", table_name, name_fruit,color_fruit,price_fruit);
             statement = conn.createStatement();
             statement.executeUpdate(query);
             System.out.println("Data Successfully added!");

@@ -7,6 +7,6 @@ public class CrudJava {
         dbFunction db = new dbFunction();
         Connection conn = db.connectDb("kawah-edu", "postgres", "moemoe12.");
 //        db.createTable(conn,"tbl_fruit");
-        db.insert_row(conn, "tbl_fruit", "Grape", "Purple", 9000);
+        db.insert_row(conn, "kawahedu_learning.tbl_fruit", "Anggur", "Ungu", 5000);
     }
 }
