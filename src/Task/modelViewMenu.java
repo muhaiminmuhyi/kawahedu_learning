@@ -1,0 +1,28 @@
+package Task;
+
+public class modelViewMenu {
+    public void menuOne(){
+        System.out.println("********************************************************");
+        System.out.println("*                Welcome To Week Three                 *");
+        System.out.println("*                                                      *");
+        System.out.println("*        please select one of the numbers below        *");
+        System.out.println("*                                                      *");
+        System.out.println("*           1. Input, Output, Data Variabel & Variable *");
+        System.out.println("*           2. Operator                                *");
+        System.out.println("*                                                      *");
+        System.out.println("********************************************************");
+        System.out.println("*               Created By Muhaimin Muhyi              *");
+        System.out.println("********************************************************");
+    }
+
+    public void menuTwo() {
+        System.out.println("********************************************************");
+        System.out.println("*                                                      *");
+        System.out.println("*           1. Luas Lingkaran                          *");
+        System.out.println("*           2. Volume Balok                            *");
+        System.out.println("*                                                      *");
+        System.out.println("********************************************************");
+        System.out.println("*               Created By Muhaimin Muhyi              *");
+        System.out.println("********************************************************");
+    }
+}
