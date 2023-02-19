@@ -1,5 +1,7 @@
 package Task;
 
+import Task.Model.modelViewMenu;
+
 import java.util.Scanner;
 public class WeekThree {
 
